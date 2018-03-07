@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+       url('../font/roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Offside';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Offside'),
+       url('../font/Offside/Offside-Regular.ttf') ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: normal 14px/1.1 Roboto, Arial, sans-serif;
+  background-color:#03A9F4;
+  color: #8A959A;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+ width: auto\9; /* ie8 */
+}
+
+body {
+  max-width: 1200px;
+  max-height: 660px;
+  height:100%;
+  margin: 131px auto 109px auto;
+  background-color: #fff;
+  border-radius:5px;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+}
+
+.page_type_signin {
+  background: url('../img/forest.jpg') 0 0 no-repeat #fff;
+  background-size: auto 100%;
+}
+
+.page_type_login {
+  background: url('../img/town.jpg') 0 0 no-repeat #fff;
+  background-size: auto 100%;
+}
+
+h1 {
+  font-size: 1.7em;
+  line-height: 2;
+  color: #353535;
+  font-weight: bold;
+  margin-bottom: 54px;
+}
+
+a {
+  color: #03A9F4;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  opacity: .7;
+}
+.form {
+  display: inline-block;
+}
+
+.form__box {
+  width: 300px;
+  position: absolute;
+  top: 104px;
+  right: 190px;
+}
+
+.form__box_position_login {
+  top:185px;
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: -10px;
+  height: 64px;
+  width: 204px;
+  background-color: #FFF;
+  font-family: Offside;
+  color: #03A9F4;
+  font-size: 28px;
+  line-height: 64px;
+  text-align: center;
+  padding-left: 20px;
+
+}
+
+.logo::after {
+  display: inline-block;
+  content: " ";
+  margin: 3em;
+  width: 0;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+  border-width: 32px;
+  position: absolute;
+  top: -84px;
+  left: 120px;
+}
+
+.form__control{
+  height: 40px;
+  display: block;
+  width: 300px;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+  background-color: #FFF;
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.1;
+  color: #8A959A;
+  padding-left: 20px;
+  padding-right: 45px;
+}
+
+.form__checkbox{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.checkbox {
+  width: 16px;
+  margin-right: 9px;
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.button {
+  display: inline-block;
+  height: 36px;
+  width: 145px;
+  border-radius: 100px;
+  background-color: #03A9F4;
+  color: #FFF;
+  font-size: .95em;
+  line-height: 2.6;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #03A9F4;
+  transition: .3s;
+}
+
+.button:hover {
+  opacity: .7;
+}
+
+.button_theme_white {
+  background-color: #FFF;
+  color: #03A9F4;
+  transition: .3s;
+}
+
+.button_theme_white:hover {
+    background-color: #03A9F4;
+    color: #FFF;
+    opacity: .7;
+}
+
+.form__agree {
+  margin: 0 0 0 25px;
+}
+
+.text_size_small {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 0 10px 0 0;
+}
+
+.form__forgot {
+  display : flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+}
+
+@media only screen and (max-width: 480px) {
+
+  html {
+    background-color: #fff;
+  }
+
+  body {
+    width: 100%;
+    max-width: 480px;
+    min-width: 360px;
+    max-height: 670px;
+    height:100%;
+    margin: 0;
+    background-color: #fff;
+    border-radius:0;
+    box-shadow: none;
+    position: relativ;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  .page_type_signin {
+    background: url('../img/forest_mob.jpg') 0 0 no-repeat #fff;
+    background-size: 100% auto;
+  }
+
+  .page_type_login {
+    background: url('../img/town_mob.jpg') 0 0 no-repeat #fff;
+    background-size: 100% auto;
+  }
+
+  .form__box {
+    width: 300px;
+    position: static;
+    margin: 300px auto 0 auto ;
+    position: static;
+  }
+
+  .form__box_position_login {
+      margin-top:315px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 46px;
+    width: 105px;
+    background-color: #FFF;
+    font-family: Offside;
+    color: #03A9F4;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    padding-left: 15px;
+
+  }
+
+  .logo::after {
+    display: inline-block;
+    content: " ";
+    margin: 3em;
+    width: 0;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 23px;
+    position: absolute;
+    top: -54px;
+    left: 51px;
+  }
+
+  .form__buttons_login {
+    margin-top: 105px ;
+  }
+}

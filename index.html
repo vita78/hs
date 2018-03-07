@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta charset= "utf-8">
+    <title>Сайт</title>
+
+    <script src= "js/jquery-3.1.1.min.js"></script>
+    <script src= "js/script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body class="page page_type_signin">
+    <div class="logo">RelaxLux</div>
+    <div class="arrow-left"></div>
+
+    <div class="form__box">
+      <h1>SIgn Up</h1>
+      <form action="#" name="reg" class="form">
+         <input class="form__control" type="text" name="user-name" placeholder="Name">
+         <input class="form__control" type="text" name="user-email" pattern="/@/" placeholder="Email">
+         <input class="form__control" type="text" name="user-email2" pattern="/@/" placeholder="Re-enter email">
+         <input class="form__control" autocomplete=""type="password" name="user-pswd" placeholder="Password">
+         <input class="form__control" type="password" name="user-pswd2" placeholder="Re-enter password">
+         <div class="form__checking">
+           <!-- <input type="checkbox" name="user-newsletter">  -->
+           <label class="form__checkbox">
+             <div class="checkbox">
+              <input type="checkbox"  name="user-newsletter">
+             </div>
+             <div class="text_size_small">Receive our weekly newsletter and other occasional updates</div>
+           </label>
+        </div>
+        <div class="form__buttons">
+          <a class="button">SIGN UP</a>
+          <a class="button button_theme_white" href="login.html">LOG In</a>
+           <!-- <button class="button">SIGN UP</button>
+           <button class="button button_theme_white">LOG In</button> -->
+        </div>
+       </form>
+       <div class="form__agree">
+         <span class="text_size_small">
+         By signing up, you agree to our <a href="#">terms of use</a>, <a href="#">privacy policy</a>,
+          <a href="#">and coockie policy</a>.
+        </span>
+      </div>
+    </div>
+</body>
+</html>
